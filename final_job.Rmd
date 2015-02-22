@@ -79,10 +79,9 @@ modFitA1 <- rpart(classe ~ ., data=myTraining, method="class")
 
 ```
 
-```{r result="hide"}
+```{r }
 fancy<-fancyRpartPlot(modFitA1)
-dev.copy(png, file = "plot1.png")
-dev.off()
+
 ```
 
 
