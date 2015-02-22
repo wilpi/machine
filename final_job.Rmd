@@ -75,9 +75,15 @@ modFitA1 <- rpart(classe ~ ., data=myTraining, method="class")
 
 ```
 
-```{r plot}
+```{r result="hide"}
 fancy<-fancyRpartPlot(modFitA1)
-print(fancy)
+dev.copy(png, file = "plot1.png")
+dev.off()
 ```
+
+
+![plot of chunk unnamed-chunk-2](plot1.png) 
+
+
 
 
